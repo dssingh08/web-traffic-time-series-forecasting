@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.env
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.Trashes
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Models
+model/*.pkl
+model/*.keras
+model/*.json
+
+# Frontend build artifacts
+static/forecast.png
+
+train_1.csv
+train.csv
+Web Traffic Forecasting.pptx
+sql_app.db
+test_api.py

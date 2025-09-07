@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forecasting App</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>Forecasting App</h1>
+
+    <h2>Predict</h2>
+    <form id="predict-form">
+        <label for="model_name">Model:</label>
+        <select id="model_name" name="model_name">
+            <option value="arima">ARIMA</option>
+            <option value="arma">ARMA</option>
+            <option value="auto_arima">Auto ARIMA</option>
+            <option value="holt_add_seasonal">Holt Additive Seasonal</option>
+            <option value="holt_add">Holt Additive</option>
+            <option value="simple_exp_smoothing">Simple Exponential Smoothing</option>
+            <option value="cnn">CNN</option>
+            <option value="cnn_60">CNN (60 Epochs)</option>
+        </select><br><br>
+        <label for="days">Days:</label>
+        <input type="number" id="days" name="days" value="10"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <div id="result"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
