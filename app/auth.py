@@ -4,11 +4,12 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from typing import Optional
+import os
 
 from sqlalchemy.orm import Session
 from app import models, schemas, database
 
-SECRET_KEY = "your-secret-key"
+SECRET_KEY = os.getenv('SECRET_KEY', 'your-super-secret-key').encode("utf-8")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
